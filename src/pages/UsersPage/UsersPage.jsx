@@ -1,7 +1,7 @@
 import React from 'react';
-import { users } from '../../shared/data/users';
+import { users } from '../../shared/consts/users';
 
-export default function HomePage() {
+export default function UsersPage() {
 
     return (
         <ul>
