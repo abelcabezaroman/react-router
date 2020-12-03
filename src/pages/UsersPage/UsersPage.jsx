@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { users } from '../../shared/consts/users';
 
 export default function UsersPage() {
 
     return (
         <ul>
-            {users.map((user,index) => <li key={index}>{user.name}</li>)}
+            {users.map((user,index) => <li key={index}><Link to={'users/' + user.id}>{user.name}</Link></li>)}
         </ul>
     )
 }

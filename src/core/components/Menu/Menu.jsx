@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Menu.scss';
 
 export default function Menu(){
@@ -7,13 +7,13 @@ export default function Menu(){
         <nav className="c-menu">
           <ul className="c-menu__list">
             <li>
-              <Link className="c-menu__link" to="/">Home</Link>
+              <NavLink exact className="c-menu__link" activeClassName="c-menu__link--active" to="/">Home</NavLink>
             </li>
             <li>
-              <Link className="c-menu__link" to="/about">About</Link>
+              <NavLink className="c-menu__link" activeClassName="c-menu__link--active" to="/about">About</NavLink>
             </li>
             <li>
-              <Link className="c-menu__link" to="/users">Users</Link>
+              <NavLink className="c-menu__link" activeClassName="c-menu__link--active" to="/users">Users</NavLink>
             </li>
           </ul>
         </nav>

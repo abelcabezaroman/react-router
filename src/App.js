@@ -2,8 +2,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import './App.css';
 import Menu from "./core/components/Menu/Menu";
@@ -22,7 +21,7 @@ function App() {
           <Menu></Menu>
 
           <Switch>
-            <Route path="/users/:id">
+            <Route path="/users/:idUser">
               <UsersDetailPage></UsersDetailPage>
             </Route>
             <Route path="/users">
